@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Support | Bangla Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #E3F2FD 0%, #E8F5E9 100%);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #006A4E 0%, #004D38 100%);
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: white;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            color: rgba(255,255,255,0.9);
+            font-size: 16px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #FFD700;
+            color: #006A4E;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+        
+        .content {
+            padding: 35px 30px;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #E8F5E9 0%, #FFF9E6 100%);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+            border: 1px solid rgba(0,106,78,0.1);
+        }
+        
+        .contact-card .email {
+            font-size: 24px;
+            font-weight: 600;
+            color: #006A4E;
+            margin: 15px 0;
+            word-break: break-all;
+        }
+        
+        .contact-card .response-time {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .info-section {
+            margin: 25px 0;
+        }
+        
+        .info-section h3 {
+            color: #1976D2;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .info-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-section li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-section li:last-child {
+            border-bottom: none;
+        }
+        
+        .emoji {
+            font-size: 20px;
+            min-width: 35px;
+        }
+        
+        .faq-item {
+            background: #F8F8F8;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .faq-item strong {
+            color: #006A4E;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .footer {
+            background: #1A1A2E;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 13px;
+        }
+        
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        
+        .button {
+            display: inline-block;
+            background: #006A4E;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+        
+        .button:hover {
+            transform: scale(1.02);
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 25px 20px;
+            }
+            .contact-card .email {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📧 Support Center</h1>
+            <p>How can we help you?</p>
+            <div class="badge">Bangla Hub 🇧🇩</div>
+        </div>
+        
+        <div class="content">
+            <div class="contact-card">
+                <div style="font-size: 48px;">📧</div>
+                <div class="email">info@banglahub.us</div>
+                <p>Email us for any questions, issues, or feedback</p>
+                <div class="response-time">⏱️ Response time: 24-48 hours</div>
+                <a href="mailto:info@banglahub.us" class="button">Send Email</a>
+            </div>
+            
+            <div class="info-section">
+                <h3>📋 Quick Links</h3>
+                <ul>
+                    <li><span class="emoji">🔒</span> <a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><span class="emoji">📋</span> <a href="terms_of_service.html">Terms of Service</a></li>
+                    <li><span class="emoji">🗑️</span> <a href="#">How to delete account</a></li>
+                    <li><span class="emoji">📍</span> Report inappropriate content</li>
+                </ul>
+            </div>
+            
+            <div class="info-section">
+                <h3>❓ Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <strong>How do I delete my account?</strong>
+                    <p>Go to Settings → Delete Account. Your data will be removed within 30 days.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>How do I report inappropriate content?</strong>
+                    <p>Email us at info@banglahub.us with details and screenshots.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Why do you need my location?</strong>
+                    <p>To show local events, services, and businesses near you.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>How do I post an event?</strong>
+                    <p>Go to Events → Create Event and fill out the form. Events are reviewed before publishing.</p>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>🚨 Emergency?</h3>
+                <p>Bangla Hub is not an emergency service. For emergencies, please call <strong>911</strong> immediately.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 Bangla Hub. All rights reserved.</p>
+            <p>🇧🇩 Connecting the Bengali Community Worldwide | 🇺🇸 Orlando, Florida</p>
+        </div>
+    </div>
+</body>
+</html>

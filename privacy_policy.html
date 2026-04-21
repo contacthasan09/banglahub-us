@@ -169,6 +169,21 @@
             text-decoration: none;
         }
         
+        .flow-box {
+            background: #E3F2FD;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+            border-left: 4px solid #1976D2;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        
+        .flow-box p {
+            margin-bottom: 8px;
+            font-family: monospace;
+        }
+        
         .data-table {
             width: 100%;
             border-collapse: collapse;
@@ -259,6 +274,9 @@
                 background: #2a2a3e;
                 color: #FFD700;
             }
+            .flow-box {
+                background: #1a2a3e;
+            }
         }
     </style>
 </head>
@@ -272,100 +290,125 @@
         
         <div class="content">
             <div class="last-updated">
-                📅 Last Updated: April 21, 2026 | ✅ Effective: April 21, 2026
+                📅 Last Updated: April 22, 2026 | ✅ Effective: April 22, 2026
             </div>
 
+            <!-- Quick Summary -->
             <div class="info-card">
                 <h4>📌 Quick Summary</h4>
-                <p>✅ Guest users can browse content without an account - absolutely NO data collected<br>
-                ✅ We do NOT sell, rent, or trade your personal information to third parties<br>
-                ✅ We do NOT use your data for tracking purposes as defined by Apple's App Tracking Transparency framework<br>
-                ✅ Location data is only collected from registered users with permission and is not stored continuously<br>
-                ✅ Email verification is required for registered users to secure their account<br>
-                ✅ You can delete your account and all data anytime<br>
-                ✅ Images are stored securely with Cloudinary (registered users only)<br>
-                ✅ Share feature available only for events (no save/bookmark feature)</p>
+                <p>✅ Location permission dialog appears AFTER email verification, BEFORE state selection<br>
+                ✅ You tap "Use Current Location" during signup - NO permission dialog at that time<br>
+                ✅ State selection screen appears AFTER location permission<br>
+                ✅ You must select a state to access the home screen<br>
+                ✅ Post location uses map picker - NO additional GPS permission needed<br>
+                ✅ We do NOT sell, rent, or trade your personal information<br>
+                ✅ We do NOT use your data for tracking purposes<br>
+                ✅ Email verification is required<br>
+                ✅ You can delete your account and all data immediately - no backups retained</p>
+            </div>
+
+            <!-- App Flow Diagram -->
+            <div class="flow-box">
+                <p><strong>📱 COMPLETE APP FLOW:</strong></p>
+                <p>1️⃣ User opens app → Signup Screen</p>
+                <p>2️⃣ User taps "Use Current Location" (NO permission dialog)</p>
+                <p>3️⃣ User fills: First Name, Last Name, Email, Password, Phone</p>
+                <p>4️⃣ Email verification sent</p>
+                <p>5️⃣ <strong>📍 LOCATION PERMISSION DIALOG APPEARS</strong> → User Accepts or Denies</p>
+                <p>6️⃣ <strong>🗺️ STATE SELECTION SCREEN APPEARS</strong> → User selects state from list</p>
+                <p>7️⃣ Home Screen loads</p>
+                <p>8️⃣ Post Content → Map picker (search any address, no GPS needed)</p>
             </div>
 
             <p>Welcome to <strong>Bangla Hub</strong> ("we," "our," "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
 
             <h2>📋 1. Information We Collect</h2>
             
-            <h3>1.1 Personal Information You Provide (Registered Users Only)</h3>
-            <p>When you create an account, we collect:</p>
+            <h3>1.1 Personal Information You Provide (Signup)</h3>
+            <p>When you create an account, you must provide:</p>
             <table class="data-table">
                 <thead>
                     <tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Identity Data</td>
-                        <td>First name, Last name</td>
-                        <td>Account identification</td>
+                        <td>Identity Data</th>
+                        <td>First name, Last name</th>
+                        <td>Account identification</th>
                     </tr>
                     <tr>
-                        <td>Contact Data</td>
-                        <td>Email address, Phone number (optional)</td>
-                        <td>Communication & email verification</td>
+                        <td>Contact Data</th>
+                        <td>Email address, Phone number</th>
+                        <td>Communication & email verification</th>
                     </tr>
                     <tr>
-                        <td>Profile Data</td>
-                        <td>Profile photo, Location (city/state)</td>
-                        <td>Personalization & discovery</td>
-                    </tr>
-                    <tr>
-                        <td>Account Data</td>
-                        <td>User ID, Role, Created date</td>
-                        <td>Account management</td>
+                        <td>Profile Data</th>
+                        <td>Profile photo (optional)</th>
+                        <td>Personalization & discovery</th>
                     </tr>
                 </tbody>
             </table>
 
-            <h3>1.2 Guest Access (Browse Without Account - NO Data Collection)</h3>
-            <p>Bangla Hub allows you to browse content without creating an account. <strong>When using guest mode, we collect absolutely no personal information from you.</strong></p>
+            <h3>1.2 Signup Location (Tap "Use Current Location" - NO Permission Dialog)</h3>
+            <p>During signup, you tap the <strong>"Use Current Location"</strong> button. <strong>No permission dialog appears at this time.</strong></p>
             <ul>
-                <li>👁️ You can view events, services, job postings, business listings, and educational content</li>
-                <li>🔍 You can search and explore the app freely</li>
-                <li>🚫 You CANNOT upload events, post jobs, create business listings, or add service provider profiles</li>
-                <li>🚫 You CANNOT like, share, or interact with content (sharing requires login)</li>
-                <li>🚫 You CANNOT view full details of certain content (login required dialog appears)</li>
-                <li>📊 <strong>We do NOT collect any data from guest users - no analytics, no location, no device information, nothing</strong></li>
-                <li>📍 Location is never accessed for guest users</li>
-                <li>🍪 No cookies or tracking identifiers are stored</li>
+                <li>📍 You tap "Use Current Location" on the signup screen</li>
+                <li>🔐 <strong>NO location permission dialog appears during signup</strong></li>
+                <li>📊 Your location (city, state, country) is stored temporarily until email verification</li>
+                <li>✅ You can complete signup without seeing any permission dialog</li>
+            </ul>
+
+            <h3>1.3 Location Permission Dialog (Appears AFTER Email Verification)</h3>
+            <p><strong>After you verify your email address, the location permission dialog appears.</strong> This is the FIRST time you see a permission request.</p>
+            <ul>
+                <li>📍 The location permission dialog appears <strong>after email verification, before state selection</strong></li>
+                <li>✅ You can Accept or Deny the permission request</li>
+                <li>📊 If you Accept, your device GPS detects your current city, state, country, latitude, and longitude</li>
+                <li>⚠️ If you Deny, you can still use the app with manual state selection (no GPS features)</li>
+                <li>⚙️ You can change this permission anytime in device settings</li>
             </ul>
             <div class="info-card">
-                <h4>🔑 Login Required Dialog</h4>
-                <p><strong>When you trigger an action that requires an account (upload, share, like, view details), a login dialog will appear prompting you to sign up or sign in.</strong> Guest users remain 100% anonymous with zero data collection until they choose to create an account.</p>
+                <h4>💡 Important - Permission Timing</h4>
+                <p><strong>Location permission dialog appears AFTER email verification, BEFORE state selection screen.</strong> Not during signup.</p>
             </div>
 
-            <h3>1.3 Location Data (Registered Users Only)</h3>
-            <p>For registered users who grant permission, we collect precise location data (latitude/longitude) to:</p>
+            <h3>1.4 State Selection Screen (Appears AFTER Location Permission)</h3>
+            <p>After you respond to the location permission dialog, the <strong>State Selection screen appears</strong>.</p>
             <ul>
-                <li>📍 Show relevant events, services, and businesses near you</li>
-                <li>📍 Enable location-based search for tutors, service providers, and business partners</li>
-                <li>📍 Allow you to post events with accurate location information</li>
-                <li>📍 Provide city and state-specific content recommendations</li>
+                <li>🗺️ You must select a state from a list of all US states</li>
+                <li>✅ You cannot access the home screen without selecting a state</li>
+                <li>🔄 This selection acts as a <strong>global location filter</strong> - all screens show content relevant to your selected state</li>
+                <li>📍 <strong>This is separate from GPS location</strong> - you select manually from a list</li>
+                <li>🔘 Each screen has a <strong>Change Location</strong> button to update your selected state</li>
+                <li>💾 Your selected state preference is stored in your account</li>
             </ul>
-            <div class="info-card">
-                <h4>💡 Location Permission</h4>
-                <p><strong>Location data is only collected when you grant permission and is used solely to provide location-based features within the app. Location data is not stored continuously and is only used when required for specific features.</strong> You can disable location services in your device settings at any time. However, some features like "nearby events" and "local services" may be limited without location access.</p>
-            </div>
 
-            <h3>1.4 Content You Create and Post (Registered Users Only)</h3>
+            <h3>1.5 Post Location from Map (REQUIRED for Publishing Content)</h3>
+            <p>When you post any content on Bangla Hub (events, job postings, business promotions, service listings, etc.), you <strong>must</strong> select a location from the map picker.</p>
+            <ul>
+                <li>🗺️ You select a location by picking a point on the map or searching for an address</li>
+                <li>📍 We collect the address, latitude, and longitude of your selected location</li>
+                <li>✅ <strong>This is required for all posts - you cannot publish content without selecting a location</strong></li>
+                <li>📌 The location you select is displayed publicly on your post</li>
+                <li>✏️ You can choose any location - it does not need to be your current location</li>
+                <li>🔐 <strong>NO additional GPS permission is needed for the map picker</strong> - you can search for any address</li>
+            </ul>
+
+            <h3>1.6 Content You Create and Post (Registered Users Only)</h3>
             <p>When you use our interactive features as a registered user, you may provide:</p>
             <ul>
-                <li>📅 Event listings (title, description, date, location, images)</li>
-                <li>💼 Job postings (company name, job title, requirements, salary)</li>
-                <li>🏪 Business promotions (business name, description, products, offers)</li>
-                <li>🔧 Service provider listings (service category, pricing, availability)</li>
-                <li>📚 Education services (tutoring, admissions guidance, Bangla classes)</li>
-                <li>🤝 Business partner requests (partner type, budget, requirements)</li>
+                <li>📅 Event listings (title, description, date, location from map, images)</li>
+                <li>💼 Job postings (company name, job title, requirements, salary, location from map)</li>
+                <li>🏪 Business promotions (business name, description, products, offers, location from map)</li>
+                <li>🔧 Service provider listings (service category, pricing, availability, location from map)</li>
+                <li>📚 Education services (tutoring, admissions guidance, Bangla classes, location from map)</li>
+                <li>🤝 Business partner requests (partner type, budget, requirements, location from map)</li>
                 <li>⭐ Reviews and ratings for services</li>
                 <li>❤️ Likes and interests on events and listings</li>
             </ul>
             <p><strong>Note:</strong> Bangla Hub does NOT have a save/bookmark feature. You can like events, but cannot save them for later.</p>
 
-            <h3>1.5 Images and Photos</h3>
+            <h3>1.7 Images and Photos</h3>
             <p>Bangla Hub allows registered users to upload images for:</p>
             <ul>
                 <li><strong>Profile photos</strong> - Stored securely with Cloudinary</li>
@@ -373,22 +416,24 @@
                 <li><strong>Business logos and gallery images</strong> - Stored as base64 in Firestore</li>
                 <li><strong>Service provider profile images</strong> - Stored as base64 in Firestore</li>
             </ul>
-            <p>All images are stored securely and used only for their intended purpose within the app.</p>
 
             <h2>🎯 2. How We Use Your Information</h2>
             <p>We use your information for the following purposes:</p>
             <ul>
                 <li><strong>Account Management:</strong> Create and manage your user account</li>
-                <li><strong>Email Verification:</strong> <strong>We use email verification to confirm your identity and secure your account during signup and login. You must verify your email before accessing the app's main features.</strong></li>
-                <li><strong>Guest Browsing:</strong> Allow users to explore the app without collecting any personal information</li>
-                <li><strong>Event Sharing:</strong> Allow registered users to share events with others via device sharing options (Messages, WhatsApp, Email, etc.)</li>
+                <li><strong>Email Verification:</strong> Confirm your identity after signup</li>
+                <li><strong>Location Permission:</strong> Request GPS access after email verification</li>
+                <li><strong>State Selection:</strong> Store your manually selected state for content filtering</li>
+                <li><strong>Post Location:</strong> Store map locations for your posts (address, coordinates)</li>
+                <li><strong>Signup Location:</strong> Temporarily store your location from "Use Current Location" tap</li>
+                <li><strong>GPS Location (Optional):</strong> If you accept permission, GPS detects your current location</li>
+                <li><strong>Event Sharing:</strong> Share events via device sharing options</li>
                 <li><strong>Service Delivery:</strong> Provide, maintain, and improve our services</li>
-                <li><strong>Personalization:</strong> Show relevant content based on your location and interests</li>
-                <li><strong>Communication:</strong> Send important notifications about your account and updates via email</li>
-                <li><strong>Support:</strong> Respond to your inquiries and provide customer support</li>
-                <li><strong>Analytics:</strong> Analyze app usage to improve user experience (registered users only, anonymous)</li>
-                <li><strong>Security:</strong> Prevent fraud, spam, and ensure platform security</li>
-                <li><strong>Legal Compliance:</strong> Comply with applicable laws and regulations</li>
+                <li><strong>Communication:</strong> Send account notifications via email</li>
+                <li><strong>Support:</strong> Respond to your inquiries</li>
+                <li><strong>Analytics:</strong> Improve user experience (anonymous)</li>
+                <li><strong>Security:</strong> Prevent fraud and spam</li>
+                <li><strong>Legal Compliance:</strong> Comply with applicable laws</li>
             </ul>
 
             <h2>⚖️ 3. Legal Basis for Processing</h2>
@@ -399,7 +444,9 @@
                 <li><strong>Legitimate Interests:</strong> To improve our services, prevent fraud, and ensure platform security</li>
                 <li><strong>Legal Compliance:</strong> When required by applicable laws and regulations</li>
             </ul>
-            <p><strong>For guest users:</strong> No personal data is collected or processed. Guest browsing is completely anonymous with zero data collection.</p>
+            <p><strong>For location data:</strong> Processed based on your explicit consent when you accept the location permission dialog after email verification.</p>
+            <p><strong>For state selection:</strong> User-provided preference data stored in your account.</p>
+            <p><strong>For post location:</strong> Required for publishing content - map picker does not require GPS permission.</p>
 
             <h2>🚫 4. Data Usage and Tracking</h2>
             <div class="info-card">
@@ -412,16 +459,15 @@
             <h2>🤝 5. Information Sharing and Disclosure</h2>
             
             <h3>5.1 Public Information</h3>
-            <p>Information you post publicly on Bangla Hub is visible to all users (including guest users):</p>
+            <p>Information you post publicly on Bangla Hub is visible to all users:</p>
             <ul>
-                <li>Event listings and details</li>
-                <li>Job postings</li>
-                <li>Business promotions</li>
-                <li>Service provider profiles</li>
-                <li>Business partner requests</li>
+                <li>Event listings and details (including the location you selected from map)</li>
+                <li>Job postings (including the location you selected from map)</li>
+                <li>Business promotions (including the location you selected from map)</li>
+                <li>Service provider profiles (including the location you selected from map)</li>
+                <li>Business partner requests (including the location you selected from map)</li>
                 <li>Your public profile name and photo</li>
             </ul>
-            <p><strong>Important:</strong> Content shared publicly may remain visible to other users who have previously accessed it, even after you delete your account.</p>
 
             <h3>5.2 Event Sharing Feature</h3>
             <p>Bangla Hub allows registered users to <strong>share events</strong> with others using their device's native sharing options (Messages, WhatsApp, Email, social media, etc.). When you use the share feature:</p>
@@ -429,9 +475,8 @@
                 <li>We do not collect information about who you share with</li>
                 <li>We do not store sharing history</li>
                 <li>The share feature uses your device's built-in sharing capabilities</li>
-                <li>No event data is sent to our servers when you share - sharing happens directly from your device</li>
+                <li>No event data is sent to our servers when you share</li>
             </ul>
-            <p><strong>Note:</strong> Bangla Hub does NOT have a save/bookmark feature. You cannot save events or content for later.</p>
 
             <h3>5.3 Service Providers</h3>
             <p>We share your information with trusted third-party service providers who help us operate the app:</p>
@@ -441,40 +486,27 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Firebase (Google)</td>
-                        <td>Authentication, database (Firestore), and backend services</td>
-                        <td>Registered users only: Account information, user-generated content, metadata<br>
-                        <strong>Guest users: NO data collected</strong></td>
+                        <td>Firebase (Google)</th>
+                        <td>Authentication, database (Firestore), and backend services</th>
+                        <td>Account information, user-generated content, signup location, post locations, state preference</th>
                     </tr>
                     <tr>
-                        <td>Cloudinary</td>
-                        <td>Image hosting, storage, optimization, and delivery</td>
-                        <td>Profile photos, event images, uploaded media (registered users only)</td>
+                        <td>Cloudinary</th>
+                        <td>Image hosting, storage, optimization, and delivery</th>
+                        <td>Profile photos, event images, uploaded media</th>
                     </tr>
                     <tr>
-                        <td>Geolocator / Geocoding</td>
-                        <td>Location services</td>
-                        <td>Device location coordinates (temporary, not stored - registered users only)</td>
+                        <td>Geolocator / Geocoding</th>
+                        <td>GPS location services (only after permission granted)</th>
+                        <td>Device GPS coordinates (only if user accepts permission after email verification)</th>
                     </tr>
                     <tr>
-                        <td>OpenStreetMap (Flutter Map)</td>
-                        <td>Map display and location visualization</td>
-                        <td>Location data for map display (registered users only)</td>
-                    </tr>
-                    <tr>
-                        <td>Share Plus</td>
-                        <td>Event sharing functionality</td>
-                        <td>No data collected - uses device native sharing</td>
-                    </tr>
-                    <tr>
-                        <td>URL Launcher</td>
-                        <td>External link handling</td>
-                        <td>URL click data (anonymous)</td>
+                        <td>OpenStreetMap (via Flutter Map)</th>
+                        <td>Map display and location selection for posting</th>
+                        <td>Map location data (address, coordinates) you select when creating posts</th>
                     </tr>
                 </tbody>
             </table>
-            <p>OpenStreetMap data is © OpenStreetMap contributors and available under the Open Database License (ODbL).</p>
-            <p><strong>Cloudinary</strong> is a cloud-based image management service. Your profile photos and event images are securely stored and optimized by Cloudinary. For more information, see <a href="https://cloudinary.com/privacy" target="_blank">Cloudinary's Privacy Policy</a>.</p>
 
             <h3>5.4 Legal Requirements</h3>
             <p>We may disclose your information if required by law, court order, or to:</p>
@@ -504,30 +536,33 @@
             <p><strong>You have full control over your data:</strong></p>
             <ul>
                 <li><strong>Delete Account:</strong> You can delete your account anytime via <strong>Settings → Delete Account</strong></li>
-                <li><strong>Data Removal:</strong> Upon deletion, we remove all your personal data within 30 days including:
+                <li><strong>Data Removal:</strong> Upon deletion, we remove all your personal data immediately including:
                     <ul>
                         <li>Profile information (name, email, phone, photo)</li>
-                        <li>Your posted events, job postings, and business listings</li>
+                        <li>Your signup location (city, state, country, coordinates)</li>
+                        <li>Your selected state preference</li>
+                        <li>Your posted events, job postings, and business listings (including their map locations)</li>
                         <li>Your service provider profiles</li>
                         <li>Your likes and interested events</li>
                         <li>Your authentication credentials</li>
                         <li>Your images stored on Cloudinary</li>
                     </ul>
                 </li>
-                <li><strong>Backup Retention:</strong> Some data may remain in encrypted backups for up to 90 days</li>
                 <li><strong>Public Content:</strong> Content shared publicly may remain visible to other users who have previously accessed it.</li>
-                <li><strong>Guest Data:</strong> No guest data is collected or stored. Guest users remain completely anonymous.</li>
             </ul>
+            <div class="info-card">
+                <h4>🗑️ Data Deletion</h4>
+                <p>When you delete your account, all your personal data is permanently removed from our servers immediately. No backups are retained.</p>
+            </div>
 
             <h2>✉️ 8. Email Verification</h2>
-            <p>To ensure the security of our platform and prevent spam or fake accounts, <strong>Bangla Hub requires email verification</strong>. When you sign up:</p>
+            <p>To ensure the security of our platform and prevent spam or fake accounts, <strong>Bangla Hub requires email verification</strong>. After signup:</p>
             <ul>
                 <li>A verification email is sent to your registered email address</li>
                 <li>You must click the verification link in the email to confirm your identity</li>
-                <li>You cannot access the main features of the app until your email is verified</li>
+                <li><strong>Location permission dialog appears AFTER email verification</strong></li>
                 <li>If you don't receive the email, you can request a new verification link</li>
             </ul>
-            <p>This process helps us maintain a safe and authentic community for all users.</p>
 
             <h2>👶 9. Children's Privacy</h2>
             <p>Bangla Hub is not intended for children under <strong>13 years of age</strong>. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately. For users aged 13-18, we recommend parental supervision.</p>

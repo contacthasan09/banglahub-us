@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Terms of Service | Bangla Hub</title>
+    <title>Privacy Policy | Bangla Hub</title>
     <style>
         * {
             margin: 0;
@@ -14,7 +14,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #E3F2FD 0%, #E8F5E9 100%);
+            background: linear-gradient(135deg, #FFF9E6 0%, #E8F5E9 100%);
             padding: 20px;
         }
         
@@ -28,7 +28,7 @@
         }
         
         .header {
-            background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%);
+            background: linear-gradient(135deg, #006A4E 0%, #004D38 100%);
             padding: 40px 30px;
             text-align: center;
             position: relative;
@@ -38,10 +38,21 @@
         .header::before {
             content: '';
             position: absolute;
-            top: -30%;
-            right: -10%;
-            width: 250px;
-            height: 250px;
+            top: -50%;
+            right: -20%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 50%;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 150px;
+            height: 150px;
             background: rgba(255, 215, 0, 0.08);
             border-radius: 50%;
         }
@@ -64,7 +75,7 @@
         .badge {
             display: inline-block;
             background: #FFD700;
-            color: #0D47A1;
+            color: #006A4E;
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 12px;
@@ -76,87 +87,33 @@
             padding: 35px 30px;
         }
         
-        .effective-date {
-            background: #E3F2FD;
+        .last-updated {
+            background: #E8F5E9;
             padding: 12px 18px;
             border-radius: 16px;
             margin-bottom: 15px;
-            border-left: 4px solid #1976D2;
+            border-left: 4px solid #006A4E;
             font-size: 14px;
-            color: #0D47A1;
+            color: #004D38;
             font-weight: 500;
         }
         
         .operator-info {
-            background: #E8F5E9;
+            background: #E3F2FD;
             padding: 16px 20px;
             border-radius: 16px;
             margin-bottom: 25px;
-            border-left: 4px solid #006A4E;
+            border-left: 4px solid #1976D2;
             font-size: 14px;
-            color: #004D38;
+            color: #0D47A1;
         }
         
         .operator-info strong {
             color: #006A4E;
         }
         
-        .warning-box {
-            background: #FFEBEE;
-            padding: 18px;
-            border-radius: 16px;
-            margin: 20px 0;
-            border-left: 4px solid #F42A41;
-        }
-        
-        .warning-box p {
-            color: #C62828;
-            margin-bottom: 0;
-            font-weight: 500;
-        }
-        
-        .info-box {
-            background: #FFF8E1;
-            padding: 18px;
-            border-radius: 16px;
-            margin: 20px 0;
-            border-left: 4px solid #FFD700;
-        }
-        
-        .info-box p {
-            color: #F57C00;
-            margin-bottom: 0;
-        }
-        
-        .green-box {
-            background: #E8F5E9;
-            padding: 18px;
-            border-radius: 16px;
-            margin: 20px 0;
-            border-left: 4px solid #006A4E;
-        }
-        
-        .green-box p {
-            color: #004D38;
-            margin-bottom: 0;
-        }
-        
-        .platform-box {
-            background: #E3F2FD;
-            padding: 18px;
-            border-radius: 16px;
-            margin: 20px 0;
-            border-left: 4px solid #1976D2;
-        }
-        
-        .platform-box p {
-            color: #0D47A1;
-            margin-bottom: 0;
-            font-weight: 500;
-        }
-        
         h2 {
-            color: #1976D2;
+            color: #006A4E;
             font-size: 22px;
             margin-top: 30px;
             margin-bottom: 15px;
@@ -188,20 +145,22 @@
             line-height: 1.6;
         }
         
-        .prohibited-list {
-            background: #FFF8E1;
+        .info-card {
+            background: linear-gradient(135deg, #E8F5E9 0%, #FFF9E6 100%);
             padding: 20px;
-            border-radius: 16px;
+            border-radius: 20px;
             margin: 20px 0;
+            border: 1px solid rgba(0,106,78,0.1);
         }
         
-        .prohibited-list h4 {
-            color: #F57C00;
+        .info-card h4 {
+            color: #006A4E;
             margin-bottom: 12px;
+            font-size: 16px;
         }
         
         .contact-box {
-            background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%);
+            background: linear-gradient(135deg, #006A4E 0%, #004D38 100%);
             padding: 25px;
             border-radius: 20px;
             margin: 30px 0 20px;
@@ -222,6 +181,48 @@
         .contact-box a {
             color: #FFD700;
             text-decoration: none;
+        }
+        
+        .flow-box {
+            background: #E3F2FD;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+            border-left: 4px solid #1976D2;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        
+        .flow-box p {
+            margin-bottom: 8px;
+            font-family: monospace;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #F8F8F8;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .data-table th {
+            background: #006A4E;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid #E0E0E0;
+            color: #4A4A4A;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
         }
         
         .footer {
@@ -260,6 +261,10 @@
             h2 {
                 font-size: 20px;
             }
+            .data-table th, .data-table td {
+                padding: 8px;
+                font-size: 13px;
+            }
         }
         
         @media (prefers-color-scheme: dark) {
@@ -275,28 +280,20 @@
             h3 {
                 color: #e0e0e0;
             }
-            .effective-date {
+            .info-card {
                 background: #2a2a3e;
-                color: #64B5F6;
+                border-color: #3a3a4e;
+            }
+            .last-updated {
+                background: #2a2a3e;
+                color: #FFD700;
+            }
+            .flow-box {
+                background: #1a2a3e;
             }
             .operator-info {
-                background: #1a3a2a;
-                color: #98D8C8;
-            }
-            .prohibited-list {
-                background: #2a2a3e;
-            }
-            .warning-box {
-                background: #3a1a1a;
-            }
-            .info-box {
-                background: #2a2a3e;
-            }
-            .green-box {
-                background: #1a3a2a;
-            }
-            .platform-box {
                 background: #1a2a3e;
+                color: #64B5F6;
             }
         }
     </style>
@@ -304,14 +301,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📋 Terms of Service</h1>
-            <p>Please read these terms carefully</p>
-            <div class="badge">Effective April 24, 2026</div>
+            <h1>🔒 Privacy Policy</h1>
+            <p>Your privacy matters to us</p>
+            <div class="badge">Bangla Hub 🇧🇩</div>
         </div>
         
         <div class="content">
-            <div class="effective-date">
-                📅 Last Updated: April 24, 2026 | ⚖️ Version: 2.4
+            <div class="last-updated">
+                📅 Last Updated: April 24, 2026 | ✅ Effective: April 24, 2026
             </div>
 
             <!-- Operator Information -->
@@ -319,331 +316,342 @@
                 <strong>🏢 Operator:</strong> Bangla Hub is operated by <strong>Saiful Sarker</strong>, based in <strong>Orlando, FL, United States</strong>.
             </div>
 
-            <div class="warning-box">
-                <p>⚠️ IMPORTANT: By downloading, accessing, or using Bangla Hub, you agree to be bound by these Terms of Service. If you do not agree, please do not use the app.</p>
+            <!-- Quick Summary -->
+            <div class="info-card">
+                <h4>📌 Quick Summary</h4>
+                <p>✅ Location permission dialog appears AFTER email verification, BEFORE state selection<br>
+                ✅ You tap "Use Current Location" during signup - NO permission dialog at that time<br>
+                ✅ State selection screen appears AFTER location permission<br>
+                ✅ You must select a state to access the home screen<br>
+                ✅ Post location uses Google Maps - NO additional GPS permission needed<br>
+                ✅ We do NOT sell, rent, or trade your personal information<br>
+                ✅ We do NOT use your data for tracking purposes<br>
+                ✅ We do not use analytics services for tracking user behavior or advertising purposes<br>
+                ✅ We do NOT continuously track or store location data in the background<br>
+                ✅ Email verification is required<br>
+                ✅ You can delete your account and all data at any time. Your data will be removed from our active systems immediately, and any remaining data in secure backups will be automatically deleted within a limited period.</p>
             </div>
 
-            <div class="green-box">
-                <p>📍 Bangla Hub is operated from Orlando, Florida, United States. By using this app, you agree to comply with applicable local, national, and international laws.</p>
+            <!-- App Flow Diagram -->
+            <div class="flow-box">
+                <p><strong>📱 COMPLETE APP FLOW:</strong></p>
+                <p>1️⃣ User opens app → Signup Screen</p>
+                <p>2️⃣ User taps "Use Current Location" (NO permission dialog)</p>
+                <p>3️⃣ User fills: First Name, Last Name, Email, Password, Phone</p>
+                <p>4️⃣ Email verification sent</p>
+                <p>5️⃣ <strong>📍 LOCATION PERMISSION DIALOG APPEARS</strong> → User Accepts or Denies</p>
+                <p>6️⃣ <strong>🗺️ STATE SELECTION SCREEN APPEARS</strong> → User selects state from list</p>
+                <p>7️⃣ Home Screen loads</p>
+                <p>8️⃣ Post Content → Google Maps picker (search any address, no GPS needed)</p>
             </div>
 
-            <div class="platform-box">
-                <p>🔹 <strong>Platform Only:</strong> Bangla Hub is a platform that connects users. We are not a party to any transactions, agreements, or interactions between users. Users are solely responsible for their interactions, communications, and transactions with others.</p>
-            </div>
+            <p>Welcome to <strong>Bangla Hub</strong> ("we," "our," "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
 
-            <p>Welcome to <strong>Bangla Hub</strong> ("we," "our," "us"). These Terms of Service ("Terms") govern your use of our mobile application and services. Bangla Hub is a community platform connecting Bengali communities through events, services, business networking, and educational resources.</p>
-
-            <h2>1. ✅ Acceptance of Terms</h2>
-            <p>By creating an account, downloading, or using Bangla Hub, you acknowledge that you have read, understood, and agree to these Terms. We may update these Terms from time to time. Your continued use of the app after changes constitutes acceptance of the modified Terms.</p>
-
-            <h2>2. 👤 Eligibility</h2>
-            <p>To use Bangla Hub, you must:</p>
-            <ul>
-                <li>Be at least <strong>13 years old</strong> (or the age of digital consent in your country)</li>
-                <li>Have permission from a parent or legal guardian if you are under 18</li>
-                <li>Not be prohibited from using our services by law</li>
-                <li>Provide accurate and complete information during registration</li>
-            </ul>
-            <p><strong>For users under 18:</strong> You confirm that you have obtained parental or legal guardian permission to use this app. Parents and legal guardians are responsible for monitoring their children's use of the app.</p>
-
-            <h2>3. 🔐 Account Registration</h2>
-            <p>To access certain features, you must create an account. You agree to:</p>
-            <ul>
-                <li>Provide accurate, current, and complete information</li>
-                <li>Maintain the security and confidentiality of your login credentials</li>
-                <li>Accept responsibility for all activities under your account</li>
-                <li>Notify us immediately of any unauthorized account use</li>
-                <li>Not share your account credentials with others</li>
-                <li>Not create multiple accounts for abusive purposes</li>
-            </ul>
-            <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
-
-            <h2>4. 📝 User Content and Conduct</h2>
+            <h2>📋 1. Information We Collect</h2>
             
-            <h3>4.1 Content Ownership and License</h3>
-            <p>You retain ownership of all content you post on Bangla Hub. However, by posting content, you grant Bangla Hub a worldwide, non-exclusive, royalty-free license to:</p>
+            <h3>1.1 Personal Information You Provide (Signup)</h3>
+            <p>When you create an account, you must provide:</p>
+            <table class="data-table">
+                <thead>
+                    <tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Identity Data</th>
+                        <td>First name, Last name</th>
+                        <td>Account identification</th>
+                    </tr>
+                    <tr>
+                        <td>Contact Data</th>
+                        <td>Email address, Phone number</th>
+                        <td>Communication & email verification</th>
+                    </tr>
+                    <tr>
+                        <td>Profile Data</th>
+                        <td>Profile photo (optional)</th>
+                        <td>Personalization & discovery</th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>1.2 Guest Access (Browse Without Account - No Personal Data Collected)</h3>
+            <p>Bangla Hub allows you to browse content without creating an account.</p>
             <ul>
-                <li>Display, distribute, and promote your content within the app</li>
-                <li>Store and backup your content on our servers</li>
-                <li>Use your content to improve our services</li>
-                <li>Share your content with other users as intended by the feature</li>
+                <li>👁️ You can view events, services, job postings, business listings, and educational content</li>
+                <li>🔍 You can search and explore the app freely</li>
+                <li>📍 Manual state selection is required - you must select a state from the list to enter the app (this is not GPS tracking)</li>
+                <li>🚫 You CANNOT upload events, post jobs, create business listings, or add service provider profiles</li>
+                <li><strong>We do not collect personal data from guest users. Basic technical data required for app functionality may be processed but is not stored or used for identification.</strong></li>
             </ul>
 
-            <h3>4.2 Prohibited Content</h3>
-            <div class="prohibited-list">
-                <h4>🚫 You may NOT post content that:</h4>
-                <ul>
-                    <li>Is illegal, fraudulent, or deceptive</li>
-                    <li>Contains hate speech, harassment, threats, or bullying</li>
-                    <li>Infringes intellectual property rights (copyright, trademark)</li>
-                    <li>Contains malware, viruses, or harmful code</li>
-                    <li>Is sexually explicit or contains nudity</li>
-                    <li><strong>Promotes or contains harmful, violent, or disturbing content</strong></li>
-                    <li>Contains false or misleading information</li>
-                    <li>Violates any applicable local, national, or international laws</li>
-                    <li>Impersonates another person or entity</li>
-                    <li>Contains spam, unsolicited advertising, or pyramid schemes</li>
-                    <li>Discloses others' personal information without consent (doxxing)</li>
-                    <li>Promotes self-harm, suicide, or eating disorders</li>
-                </ul>
+            <h3>1.3 Signup Location (Tap "Use Current Location" - NO Permission Dialog)</h3>
+            <p>During signup, you tap the <strong>"Use Current Location"</strong> button. <strong>No permission dialog appears at this time.</strong></p>
+            <ul>
+                <li>📍 You tap "Use Current Location" on the signup screen</li>
+                <li>🔐 <strong>NO location permission dialog appears during signup</strong></li>
+                <li>📊 Your location (city, state, country) is stored temporarily until email verification</li>
+                <li>✅ You can complete signup without seeing any permission dialog</li>
+            </ul>
+
+            <h3>1.4 Location Permission Dialog (Appears AFTER Email Verification)</h3>
+            <p><strong>After you verify your email address, the location permission dialog appears.</strong> This is the FIRST time you see a permission request.</p>
+            <ul>
+                <li>📍 The location permission dialog appears <strong>after email verification, before state selection</strong></li>
+                <li>✅ You can Accept or Deny the permission request</li>
+                <li>📊 If you Accept, your device GPS detects your current city, state, country, latitude, and longitude</li>
+                <li>⚠️ If you Deny, you can still use the app with manual state selection (no GPS features)</li>
+                <li>⚙️ You can change this permission anytime in device settings</li>
+                <li><strong>We do not continuously track or store location data in the background.</strong> Location is only accessed when you actively use location features.</li>
+            </ul>
+            <div class="info-card">
+                <h4>💡 Important - Permission Timing</h4>
+                <p><strong>Location permission dialog appears AFTER email verification, BEFORE state selection screen.</strong> Not during signup.</p>
+                <p><strong>We do not continuously track or store location data in the background.</strong></p>
             </div>
 
-            <h3>4.3 Event Posting Guidelines</h3>
-            <p>When posting events, you agree that:</p>
+            <h3>1.5 State Selection Screen (Appears AFTER Location Permission)</h3>
+            <p>After you respond to the location permission dialog, the <strong>State Selection screen appears</strong>.</p>
             <ul>
-                <li>Events must be legitimate and accurately described</li>
-                <li>You have the right to organize or promote the event</li>
-                <li>Event information (date, time, location) must be accurate</li>
-                <li><strong>We may review, approve, reject, or remove content before or after publication at our discretion.</strong></li>
-                <li>We reserve the right to remove events that violate these Terms</li>
+                <li>🗺️ You must select a state from a list of all US states</li>
+                <li>✅ You cannot access the home screen without selecting a state</li>
+                <li>🔄 This selection acts as a <strong>global location filter</strong> - all screens show content relevant to your selected state</li>
+                <li>📍 <strong>This is separate from GPS location</strong> - you select manually from a list</li>
+                <li>🔘 Each screen has a <strong>Change Location</strong> button to update your selected state</li>
+                <li>💾 Your selected state preference is stored in your account</li>
             </ul>
 
-            <h3>4.4 Business and Service Listings</h3>
-            <p>For business promotions, service provider listings, job postings, and business partner requests:</p>
+            <h3>1.6 Post Location from Google Maps (REQUIRED for Publishing Content)</h3>
+            <p>When you post any content on Bangla Hub (events, job postings, business promotions, service listings, etc.), you <strong>must</strong> select a location using Google Maps picker.</p>
             <ul>
-                <li>You must have proper licenses and permits where required by law</li>
-                <li>Business information must be accurate and verifiable</li>
-                <li>We may verify information before approving listings</li>
-                <li>Misrepresentation of services may result in account termination</li>
-                <li>You are responsible for fulfilling any commitments made through the app</li>
-                <li>All business activities must comply with applicable laws</li>
+                <li>🗺️ You select a location by picking a point on Google Maps or searching for an address</li>
+                <li>📍 We collect the address, latitude, and longitude of your selected location</li>
+                <li>✅ <strong>This is required for all posts - you cannot publish content without selecting a location</strong></li>
+                <li>📌 The location you select is displayed publicly on your post</li>
+                <li>✏️ You can choose any location - it does not need to be your current location</li>
+                <li>🔐 <strong>NO additional GPS permission is needed for the Google Maps picker</strong> - you can search for any address</li>
             </ul>
 
-            <h2>5. 🤝 Community Guidelines</h2>
-            <p>All users must follow these community guidelines:</p>
+            <h3>1.7 Content You Create and Post (Registered Users Only)</h3>
+            <p>When you use our interactive features as a registered user, you may provide:</p>
             <ul>
-                <li>Treat others with respect and kindness</li>
-                <li>Do not spam or send unsolicited messages</li>
-                <li>Do not impersonate others or use fake identities</li>
-                <li>Do not attempt to hack, disrupt, or damage the app</li>
-                <li>Do not scrape, crawl, or collect user data without permission</li>
-                <li>Do not post others' personal information without consent</li>
-                <li>Do not use the app for illegal activities</li>
-                <li>Report inappropriate content or behavior to us</li>
+                <li>📅 Event listings (title, description, date, location from Google Maps, images)</li>
+                <li>💼 Job postings (company name, job title, requirements, salary, location from Google Maps)</li>
+                <li>🏪 Business promotions (business name, description, products, offers, location from Google Maps)</li>
+                <li>🔧 Service provider listings (service category, pricing, availability, location from Google Maps)</li>
+                <li>📚 Education services (tutoring, admissions guidance, Bangla classes, location from Google Maps)</li>
+                <li>🤝 Business partner requests (partner type, budget, requirements, location from Google Maps)</li>
+                <li>⭐ Reviews and ratings for services</li>
+                <li>❤️ Likes and interests on events and listings</li>
+            </ul>
+            <p><strong>Note:</strong> Bangla Hub does NOT have a save/bookmark feature. You can like events, but cannot save them for later.</p>
+
+            <h3>1.8 Images and Photos</h3>
+            <p>Bangla Hub allows registered users to upload images for:</p>
+            <ul>
+                <li><strong>Profile photos</strong> - Stored securely with Cloudinary</li>
+                <li><strong>Event banners and images</strong> - Stored securely with Cloudinary</li>
+                <li><strong>Business logos and gallery images</strong> - Stored as base64 in Firestore</li>
+                <li><strong>Service provider profile images</strong> - Stored as base64 in Firestore</li>
             </ul>
 
-            <h2>6. 🛡️ Content Moderation and Enforcement</h2>
-            <p>We reserve the right, but not the obligation, to:</p>
+            <h2>🎯 2. How We Use Your Information</h2>
+            <p>We use your information for the following purposes:</p>
             <ul>
-                <li>Review, moderate, approve, reject, or remove any content at our discretion</li>
-                <li>Suspend or terminate accounts that violate these Terms</li>
-                <li>Take legal action for serious or repeated violations</li>
-                <li>Report illegal activity to law enforcement authorities</li>
-                <li>Limit or restrict access to certain features</li>
+                <li><strong>Account Management:</strong> Create and manage your user account</li>
+                <li><strong>Email Verification:</strong> Confirm your identity after signup</li>
+                <li><strong>Location Permission:</strong> Request GPS access after email verification</li>
+                <li><strong>State Selection:</strong> Store your manually selected state for content filtering</li>
+                <li><strong>Post Location:</strong> Store Google Maps locations for your posts (address, coordinates)</li>
+                <li><strong>Signup Location:</strong> Temporarily store your location from "Use Current Location" tap</li>
+                <li><strong>GPS Location (Optional):</strong> If you accept permission, GPS detects your current location</li>
+                <li><strong>Event Sharing:</strong> Share events via device sharing options</li>
+                <li><strong>Service Delivery:</strong> Provide, maintain, and improve our services</li>
+                <li><strong>Communication:</strong> Send account notifications via email</li>
+                <li><strong>Support:</strong> Respond to your inquiries</li>
+                <li><strong>Security:</strong> Prevent fraud and spam</li>
+                <li><strong>Legal Compliance:</strong> Comply with applicable laws</li>
             </ul>
-            <p>We strive to enforce these Terms fairly but are not responsible for user-generated content.</p>
+            <p><strong>Note:</strong> Bangla Hub does NOT use any analytics services. We do not track user behavior or collect usage statistics.</p>
+
+            <h2>⚖️ 3. Legal Basis for Processing</h2>
+            <p>We process your personal data based on the following legal grounds:</p>
+            <ul>
+                <li><strong>User Consent:</strong> When you create an account and agree to our Privacy Policy</li>
+                <li><strong>Contractual Necessity:</strong> To provide the services you request (event posting, job listings, etc.)</li>
+                <li><strong>Legitimate Interests:</strong> To improve our services, prevent fraud, and ensure platform security</li>
+                <li><strong>Legal Compliance:</strong> When required by applicable laws and regulations</li>
+            </ul>
+            <p><strong>For location data:</strong> Processed based on your explicit consent when you accept the location permission dialog after email verification. We do not continuously track or store location data in the background.</p>
+            <p><strong>For state selection:</strong> User-provided preference data stored in your account.</p>
+            <p><strong>For post location:</strong> Required for publishing content - Google Maps picker does not require GPS permission.</p>
+
+            <h2>🚫 4. Data Usage and Tracking</h2>
+            <div class="info-card">
+                <h4>🔒 Important Transparency Notice</h4>
+                <p><strong>We do not use your data for tracking purposes as defined by Apple's App Tracking Transparency framework.</strong></p>
+                <p><strong>We do not use your data for tracking across third-party apps or websites for advertising purposes.</strong></p>
+                <p><strong>We do not sell, rent, or trade your personal information to third parties.</strong></p>
+                <p><strong>We do not use any analytics services.</strong></p>
+                <p><strong>We do not continuously track or store location data in the background.</strong></p>
+            </div>
+
+            <h2>🤝 5. Information Sharing and Disclosure</h2>
             
-            <div class="info-box">
-                <p><strong>⚠️ Important Notice:</strong> <strong>We do not verify or guarantee the accuracy, legitimacy, or safety of user-generated content, listings, events, or services.</strong> Users are responsible for their own due diligence.</p>
+            <h3>5.1 Public Information</h3>
+            <p>Information you post publicly on Bangla Hub is visible to all users:</p>
+            <ul>
+                <li>Event listings and details (including the location you selected from Google Maps)</li>
+                <li>Job postings (including the location you selected from Google Maps)</li>
+                <li>Business promotions (including the location you selected from Google Maps)</li>
+                <li>Service provider profiles (including the location you selected from Google Maps)</li>
+                <li>Business partner requests (including the location you selected from Google Maps)</li>
+                <li>Your public profile name and photo</li>
+            </ul>
+
+            <h3>5.2 Event Sharing Feature</h3>
+            <p>Bangla Hub allows registered users to <strong>share events</strong> with others using their device's native sharing options (Messages, WhatsApp, Email, social media, etc.). When you use the share feature:</p>
+            <ul>
+                <li>We do not collect information about who you share with</li>
+                <li>We do not store sharing history</li>
+                <li>The share feature uses your device's built-in sharing capabilities</li>
+                <li>No event data is sent to our servers when you share</li>
+            </ul>
+
+            <h3>5.3 Service Providers</h3>
+            <p>We share your information with trusted third-party service providers who help us operate the app:</p>
+            <table class="data-table">
+                <thead>
+                    <tr><th>Provider</th><th>Purpose</th><th>Data Shared</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Firebase (Google)</th>
+                        <td>Authentication, database (Firestore), and backend services</th>
+                        <td>Account information, user-generated content, signup location, post locations, state preference</th>
+                    </tr>
+                    <tr>
+                        <td>Cloudinary</th>
+                        <td>Image hosting, storage, optimization, and delivery</th>
+                        <td>Profile photos, event images, uploaded media</th>
+                    </tr>
+                    <tr>
+                        <td>Geolocator / Geocoding</th>
+                        <td>GPS location services (only after permission granted)</th>
+                        <td>Device GPS coordinates (only if user accepts permission after email verification - not stored continuously)</th>
+                    </tr>
+                    </td>
+                        <td>Google Maps</th>
+                        <td>Map display, location search, and address selection for posting</th>
+                        <td>Map location data (address, coordinates) you select when creating posts</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Google Maps data is subject to Google's <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://mapsplatform.google.com/" target="_blank">Terms of Service</a>.</p>
+
+            <h3>5.4 Legal Requirements</h3>
+            <p>We may disclose your information if required by law, court order, or to:</p>
+            <ul>
+                <li>Comply with legal obligations</li>
+                <li>Protect our rights and property</li>
+                <li>Prevent or investigate illegal activities</li>
+                <li>Ensure the safety of our users</li>
+            </ul>
+
+            <h2>🔒 6. Data Security</h2>
+            <p>We implement industry-standard security measures to protect your data:</p>
+            <ul>
+                <li>🔑 Secure Firebase authentication with email/password</li>
+                <li>🛡️ Firestore security rules to prevent unauthorized access</li>
+                <li>🔄 Regular security updates and monitoring</li>
+                <li>📁 Secure image storage with Cloudinary</li>
+                <li>🔢 Base64 encoding for Firestore-stored images</li>
+            </ul>
+            <div class="info-card">
+                <h4>⚠️ Important Note</h4>
+                <p><strong>While we implement strong security measures, no system can be completely secure.</strong> We continuously work to improve our security practices and protect your data.</p>
             </div>
 
-            <h2>7. 🚫 Prohibited Activities</h2>
-            <p>The following activities are strictly prohibited:</p>
+            <h2>🗑️ 7. Account Deletion and Data Retention</h2>
+            <p><strong>You have full control over your data:</strong></p>
             <ul>
-                <li>Using the app for any illegal purpose</li>
-                <li>Attempting to interfere with app functionality or security</li>
-                <li>Reverse engineering, decompiling, or copying app code</li>
-                <li>Using automated systems (bots, scrapers) to access the app</li>
-                <li>Selling your account or transferring access without permission</li>
-                <li>Using the app to compete with our services</li>
-                <li>Circumventing any access or use restrictions</li>
-                <li>Uploading malicious code or attempting to compromise other users</li>
+                <li><strong>Delete Account:</strong> You can delete your account anytime via <strong>Settings → Delete Account</strong></li>
+                <li><strong>Data Removal:</strong> Upon deletion, we remove all your personal data from our active systems immediately including:
+                    <ul>
+                        <li>Profile information (name, email, phone, photo)</li>
+                        <li>Your signup location (city, state, country, coordinates)</li>
+                        <li>Your selected state preference</li>
+                        <li>Your posted events, job postings, and business listings (including their Google Maps locations)</li>
+                        <li>Your service provider profiles</li>
+                        <li>Your likes and interested events</li>
+                        <li>Your authentication credentials</li>
+                        <li>Your images stored on Cloudinary</li>
+                    </ul>
+                </li>
+                <li><strong>Public Content:</strong> Content shared publicly may remain visible to other users who have previously accessed it.</li>
             </ul>
-
-            <h2>8. 💰 Payments and Subscriptions</h2>
-            <p>Currently, Bangla Hub is <strong>free to use</strong>. If we introduce premium features or subscriptions in the future:</p>
-            <ul>
-                <li>We will notify users via email before implementing any charges</li>
-                <li>We will obtain explicit consent before charging</li>
-                <li>All payments will be processed through the App Store's payment system</li>
-                <li>Refunds will be handled according to App Store policies</li>
-                <li>We reserve the right to modify pricing with advance notice via email</li>
-            </ul>
-
-            <h2>9. 📱 App Store Terms</h2>
-            <p>This app is subject to Apple's <strong>App Store Terms of Use</strong>. In case of conflict between these Terms and Apple's terms regarding app distribution, Apple's terms prevail. You acknowledge that:</p>
-            <ul>
-                <li>Apple has no obligation to provide support or maintenance for this app</li>
-                <li>Apple is not responsible for any claims related to the app</li>
-                <li>Apple is not responsible for addressing user or third-party claims</li>
-            </ul>
-
-            <h2>10. 🗺️ Third-Party Services</h2>
-            <p>Bangla Hub integrates with third-party services including:</p>
-            <ul>
-                <li><strong>Firebase (Google)</strong> - Authentication, database, cloud storage</li>
-                <li><strong>Cloudinary</strong> - Image hosting, storage, optimization, and delivery</li>
-                <li><strong>Geolocator / Geocoding</strong> - Location services</li>
-                <li><strong>Google Maps</strong> - Map display, location search, and address selection</li>
-                <li><strong>Google Fonts</strong> - App typography</li>
-                <li><strong>Lottie</strong> - Animation rendering</li>
-                <li><strong>Share Plus</strong> - Content sharing functionality</li>
-                <li><strong>URL Launcher</strong> - External link handling</li>
-                <li><strong>Carousel Slider</strong> - Image carousel display</li>
-                <li><strong>WebView Flutter</strong> - Web content display</li>
-            </ul>
-            <p>These services have their own terms and privacy policies. We are not responsible for their practices. Google Maps data is subject to Google's <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://mapsplatform.google.com/" target="_blank">Terms of Service</a>.</p>
-
-            <h2>11. 📄 Intellectual Property</h2>
-            <p>The app, including its design, logos, name "Bangla Hub", code, and all non-user content, is owned by Bangla Hub and protected by US and international copyright, trademark, and other intellectual property laws. You may not:</p>
-            <ul>
-                <li>Copy, modify, or distribute app code or design</li>
-                <li>Use our trademarks without permission</li>
-                <li>Create derivative works based on the app</li>
-                <li>Remove any copyright or trademark notices</li>
-            </ul>
-
-            <h2>12. ⚠️ Disclaimers</h2>
-            <div class="warning-box">
-                <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND.</p>
-            </div>
-            <p>We do not guarantee:</p>
-            <ul>
-                <li>Uninterrupted or error-free service</li>
-                <li>Accuracy, reliability, or completeness of user-posted content</li>
-                <li>Suitability or quality of business, service, or event listings</li>
-                <li>Any specific outcomes from using the app</li>
-                <li>That the app will meet your requirements</li>
-                <li>Security against all potential threats</li>
-            </ul>
-            
-            <div class="platform-box">
-                <p><strong>🔹 Platform Only (Repeated for emphasis):</strong> Bangla Hub is a platform that connects users. We are not a party to any transactions, agreements, or interactions between users. Any arrangements, payments, or agreements made between users are solely their responsibility.</p>
-            </div>
-            
-            <div class="info-box">
-                <p><strong>📋 Content Disclaimer:</strong> <strong>We do not verify or guarantee the accuracy, legitimacy, or safety of user-generated content, listings, events, or services.</strong> Users are responsible for their own due diligence before engaging with any content, event, service, or business listing posted on Bangla Hub.</p>
+            <div class="info-card">
+                <h4>🗑️ Data Deletion</h4>
+                <p>When you delete your account, your personal data is removed from our active systems immediately. Any remaining data in secure backups will be automatically deleted within a limited period.</p>
             </div>
 
-            <h2>13. 📉 Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, <strong>BANGLA HUB AND ITS OWNERS, EMPLOYEES, AND AFFILIATES ARE NOT LIABLE FOR:</strong></p>
+            <h2>✉️ 8. Email Verification</h2>
+            <p>To ensure the security of our platform and prevent spam or fake accounts, <strong>Bangla Hub requires email verification</strong>. After signup:</p>
             <ul>
-                <li>Indirect, incidental, special, consequential, or punitive damages</li>
-                <li>Loss of data, revenue, profits, or business opportunities</li>
-                <li>Interactions, disputes, or transactions between users</li>
-                <li>Any harm arising from user-posted content</li>
-                <li>Unauthorized access to your account</li>
-                <li>Service interruptions or data loss</li>
-                <li>Emotional distress or reputational harm</li>
-            </ul>
-            <p><strong>If no payment is made, our liability shall be limited to the maximum extent permitted by law.</strong> Some jurisdictions do not allow certain liability limitations, so these may not apply to you.</p>
-
-            <h2>14. 🛡️ Indemnification</h2>
-            <p>You agree to <strong>indemnify and hold harmless</strong> Bangla Hub and its owners from any claims, damages, losses, or expenses (including legal fees) arising from:</p>
-            <ul>
-                <li>Your violation of these Terms</li>
-                <li>Your user content</li>
-                <li>Your use of the app</li>
-                <li>Your violation of any laws or third-party rights</li>
-                <li>Your interactions with other users</li>
+                <li>A verification email is sent to your registered email address</li>
+                <li>You must click the verification link in the email to confirm your identity</li>
+                <li><strong>Location permission dialog appears AFTER email verification</strong></li>
+                <li>If you don't receive the email, you can request a new verification link</li>
             </ul>
 
-            <h2>15. 🗑️ Termination</h2>
-            <p><strong>You may delete your account at any time</strong> through:</p>
-            <ul>
-                <li>App Settings → Delete Account</li>
-                <li>Contacting support at info@banglahub.us</li>
-            </ul>
-            <p>We may suspend or terminate your account without notice for violations including:</p>
-            <ul>
-                <li>Violation of these Terms or Community Guidelines</li>
-                <li>Fraudulent, illegal, or harmful activity</li>
-                <li>Request by law enforcement</li>
-                <li>Extended inactivity (over 2 years)</li>
-                <li>Creating risk or legal exposure for us or other users</li>
-            </ul>
-            <p>Upon termination, your right to use the app ends immediately, and we may delete your account and associated data. <strong>Some content may persist in backups or where shared with other users, as described in our Privacy Policy.</strong></p>
+            <h2>👶 9. Children's Privacy</h2>
+            <p>Bangla Hub is not intended for children under <strong>13 years of age</strong>. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately. For users aged 13-18, we recommend parental supervision.</p>
 
-            <h2>16. 📢 Changes to Terms</h2>
-            <p>We may modify these Terms periodically. Material changes will be notified via:</p>
+            <h2>🌍 10. International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries where our servers are located (including the United States). Cloudinary may process images in various regions. Google Maps may process location data in various regions. By using Bangla Hub, you consent to these transfers. We ensure appropriate safeguards are in place for international data transfers.</p>
+
+            <h2>📧 11. Your Privacy Rights</h2>
+            <p>Depending on your location, you may have the following rights:</p>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of your personal data</li>
+                <li><strong>Correction:</strong> Update or correct inaccurate information</li>
+                <li><strong>Deletion:</strong> Request deletion of your data</li>
+                <li><strong>Portability:</strong> Receive your data in a structured format</li>
+                <li><strong>Opt-out:</strong> Opt out of marketing communications</li>
+                <li><strong>Restrict:</strong> Restrict processing of your data</li>
+            </ul>
+            <p>To exercise these rights, contact us at <strong>info@banglahub.us</strong>. We will respond within 30 days.</p>
+
+            <h2>📱 12. Third-Party Links</h2>
+            <p>Our app may contain links to third-party websites or services. We are not responsible for their privacy practices. We encourage you to review the privacy policies of any third-party sites you visit.</p>
+
+            <h2>📢 13. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy periodically. Material changes will be notified via:</p>
             <ul>
                 <li>Email notification to your registered email address</li>
                 <li>App store update description</li>
-                <li>Updated terms on our website</li>
+                <li>Updated policy on our website</li>
             </ul>
-            <p>Continued use after changes constitutes acceptance. If you disagree, you must stop using the app and delete your account.</p>
+            <p>We encourage you to review this Privacy Policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-            <h2>17. ⚖️ Governing Law</h2>
-            <p>These Terms and your use of the Bangla Hub app shall be governed by and construed in accordance with the laws of the <strong>State of Florida</strong> and applicable <strong>United States federal law</strong>, without regard to its conflict of law principles.</p>
-            <p>Any disputes arising from these Terms or the app shall be resolved exclusively in the federal or state courts located in <strong>Orange County, Florida</strong>, subject to the arbitration provision below.</p>
-
-            <h2>18. ⚖️ Dispute Resolution and Binding Arbitration</h2>
-            <p><strong>PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS.</strong></p>
-            
-            <div class="info-box">
-                <p>⚖️ <strong>Important Notice:</strong> Where prohibited by law, arbitration terms may not apply. Some jurisdictions may not enforce class action waivers or mandatory arbitration. In such cases, these provisions shall not apply to you.</p>
-            </div>
-            
-            <p>Most disputes can be resolved informally by contacting us at <strong>info@banglahub.us</strong>. Before filing a formal claim, you agree to try to resolve the dispute informally for at least 60 days.</p>
-            
-            <p>Any dispute, claim, or controversy arising out of or relating to these Terms or the app that cannot be resolved informally shall be resolved by <strong>binding arbitration</strong> administered by the <strong>American Arbitration Association (AAA)</strong> under its Consumer Arbitration Rules. The arbitration shall take place in <strong>Orlando, Florida</strong>.</p>
-            
-            <p><strong>Exceptions to Arbitration:</strong> Either party may bring a claim in small claims court (if eligible) or seek injunctive relief in court for intellectual property violations.</p>
-            
-            <p><strong>Class Action Waiver:</strong> You agree to resolve disputes on an individual basis. You waive the right to participate in class actions, class arbitrations, or representative actions. <strong>Where prohibited by law, this class action waiver may not apply.</strong></p>
-            
-            <p>If any part of this arbitration provision is found unenforceable, the remainder shall remain in effect.</p>
-
-            <h2>19. 🔒 DMCA Compliance (Digital Millennium Copyright Act)</h2>
-            <p>Bangla Hub complies with the Digital Millennium Copyright Act (17 U.S.C. § 512).</p>
-            
-            <p><strong>Designated Copyright Agent:</strong></p>
+            <h2>🇺🇸 14. California Privacy Rights (CCPA)</h2>
+            <p>If you are a California resident, you have the right to:</p>
             <ul>
-                <li><strong>Name:</strong> Saiful Sarker (Bangla Hub DMCA Agent)</li>
-                <li><strong>Email:</strong> <a href="mailto:info@banglahub.us">info@banglahub.us</a></li>
-                <li><strong>Address:</strong> Orlando, FL, United States</li>
+                <li>Know what personal information we collect about you</li>
+                <li>Request deletion of your personal information</li>
+                <li>Opt-out of the sale of your personal information (we do not sell your data)</li>
+                <li>Not be discriminated against for exercising your rights</li>
             </ul>
-            
-            <p>If you believe content on Bangla Hub infringes your copyright, please contact our designated DMCA Agent with:</p>
-            <ul>
-                <li>Identification of the copyrighted work claimed to be infringed</li>
-                <li>Identification of the infringing content and its location (URL or screenshot)</li>
-                <li>Your contact information (name, address, email, phone number)</li>
-                <li>A good faith statement that the use is not authorized by the copyright owner</li>
-                <li>A statement under penalty of perjury that your notice is accurate</li>
-                <li>Your physical or electronic signature</li>
-            </ul>
-            <p>Repeat infringers will have their accounts terminated.</p>
+            <p>To exercise these rights, contact us at <strong>info@banglahub.us</strong> with "CCPA Request" in the subject line.</p>
 
-            <h2>20. 🌍 Compliance with Local Laws</h2>
-            <p>You agree to comply with all applicable local, national, and international laws, including but not limited to export control and sanctions laws. You may not use the app if you are located in a country subject to applicable sanctions or if you are on any government restricted party list.</p>
-
-            <h2>21. 🔗 Severability</h2>
-            <p>If any provision of these Terms is found unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
-
-            <h2>22. 📋 Entire Agreement</h2>
-            <p>These Terms constitute the entire agreement between you and Bangla Hub regarding app use, superseding any prior agreements, communications, or understandings.</p>
-
-            <h2>23. 📧 Contact Us</h2>
+            <h2>🌐 15. Contact Us</h2>
             <div class="contact-box">
                 <h3>📞 Bangla Hub Support</h3>
                 <p><strong>Operator:</strong> Saiful Sarker</p>
-                <p><strong>General Support:</strong> <a href="mailto:info@banglahub.us">info@banglahub.us</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@banglahub.us">info@banglahub.us</a></p>
                 <p><strong>Legal Inquiries:</strong> <a href="mailto:info@banglahub.us">info@banglahub.us</a></p>
-                <p><strong>DMCA Agent:</strong> <a href="mailto:info@banglahub.us">info@banglahub.us</a></p>
+                <p><strong>DMCA Notices:</strong> <a href="mailto:info@banglahub.us">info@banglahub.us</a></p>
                 <p><strong>Response Time:</strong> 24-48 hours</p>
-                <p><strong>Business Address:</strong> Orlando, FL, United States</p>
-            </div>
-
-            <div class="warning-box">
-                <p>⚠️ For emergencies or immediate assistance: <strong>Please contact your local emergency services.</strong> Bangla Hub is not a substitute for emergency services. If you are in crisis, please contact your local emergency number.</p>
-            </div>
-
-            <div class="green-box">
-                <h4>📌 Quick Summary</h4>
-                <ul style="margin-bottom: 0;">
-                    <li>✅ You must be 13+ to use Bangla Hub (parental permission required for under 18)</li>
-                    <li>✅ Be respectful and follow community guidelines</li>
-                    <li>✅ Don't post illegal or harmful content</li>
-                    <li>✅ We may review, approve, reject, or remove content at our discretion</li>
-                    <li>✅ <strong>We are not a party to user-to-user transactions</strong></li>
-                    <li>✅ <strong>We do not verify or guarantee user-generated content</strong></li>
-                    <li>✅ The app is provided "as is" without warranties</li>
-                    <li>✅ Our liability is limited as permitted by law</li>
-                    <li>✅ Disputes generally resolved through binding arbitration in Orlando, Florida</li>
-                    <li>✅ You can delete your account anytime (some content may persist in backups)</li>
-                    <li>✅ Contact us at info@banglahub.us</li>
-                </ul>
+                <p><strong>Address:</strong> Orlando, FL, United States</p>
             </div>
         </div>
         
